@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
 
   if (pathname === "/health") {
     res.writeHead(200, {"Content-Type": "application/json; charset=utf-8"});
-    return res.end(JSON.stringify({ok: true}));
+    return res.end(JSON.stringify({ok:true}));
   }
 
   if (pathname === "/" || pathname === "/index.html") {
@@ -26,5 +26,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, "0.0.0.0", () => {
-  console.log(`REV URL Generator running on port ${PORT}`);
+  console.log(`REV Link Generator running on port ${PORT}`);
 });
